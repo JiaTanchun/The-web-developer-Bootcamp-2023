@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<htm;>
+    <head>
+        <title>Dream of Red Chamber</title>
+        <style>
+            h2{
+                color:palevioletred
+            }
+        </style>
+        <link rel="stylesheet" href="my_styles.css">
+    </head>
+    <body>
+        <main>
+        <h1>Dream of Red Chamber</h1>
+        <p><b>Dream of the Red Chamber</b> (Honglou Meng) or <b>The Story of the Stone</b> (Shitou Ji) is a Chinese novel composed by Cao Xueqin <sup><a href="https://en.wikipedia.org/wiki/Cao_Xueqin">[1]</a></sup> in the mid-18th century. One of the Four Great Classical Novels of Chinese literature, it is known for its psychological scope, and its observation of the worldview, aesthetics, lifestyles, and social relations of 18th-century China.</p>
+
+        <p>The intricate strands of its plot depict the rise and decline of a family much like Cao's own and, by extension, of the dynasty itself. Cao depicts the power of the father over the family, but the novel is intended to be a memorial to the women he knew in his youth: friends, relatives and servants. At a more profound level, the author explores religious and philosophical questions, and the writing style includes echoes of the plays and novels of the late Ming, as well as poetry from earlier periods.</p>
+        <p>You can watch it at:</p>
+        <ul>
+            <li><a class="tag" href="https://www.bilibili.com/bangumi/play/ep327843?from_spmid=666.19.0.0">Video Version</a></li>
+            <li><a class="tag" href="http://mz.guoxuelu.com/hongloumeng.htm">Book Version</a></li>
+            <h3>Search Bilibili</h3>
+            <form action="https://www.bilibili.com/search">
+                <input type="text" name="q">
+                <button>Search Bilibili</button>
+            </form>
+        </ul>
+        <hr>        
+        <h2>Language</h2>
+        
+        <p>The novel is composed in written vernacular (baihua) rather than Classical Chinese (wenyan). Cao Xueqin was well versed in Chinese poetry and in Classical Chinese, having written tracts in the semi-wenyan style, while the novel's dialogue is written in the Beijing Mandarin dialect, which was to become the basis of modern spoken Chinese. In the early 20th century, lexicographers used the text to establish the vocabulary of the new standardised language and reformers used the novel to promote the written vernacular.</p>
+        <hr>
+        <dl>
+            <dt><h2>Twelve Beauties of Jinlin</h2></dt>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Main Volume</th>
+                        <th rowspan="2">Supplementary</th>
+                        <th colspan="2">Another Supplamentary</th>
+                    </tr>
+                    <tr>
+
+                        <th>YaHuan</th>
+                        <th>XiZi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Lindaiyu</td>
+                    <td></td>
+                    <td>Qingwen</td>
+                    <td>LingGuan</td>
+                </tr>
+                <tr>
+                    <td>Xuebaochai</td>
+                    <td></td>
+                    <td>Xiren</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>QinKeqing</td>
+                    <td>XiangLing</td>
+                    <td>RuiZhu</td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <section>
+            <dd><a href="https://en.wikipedia.org/wiki/Lin_Daiyu">Lin Daiyu</a></dd><img src="web developer/LinDaiyu.jpeg" alt="Lin Daiyu" width="130" height="200"><p>
+                "Now you are dead and gone,<br>
+                I gather you for the grave,<br>
+                And I'm not yet able to foretell,<br>
+                when my own death will be mourned."&hearts;<br>
+            </p>
+            <select name="TwelveBeauties" id="">
+                <option value="lindaiyu">Lindaiyu</option>
+                <option value="Xuebaochai">Xuebaochai</option>
+                <input type="range" id="LoveValue" min="0",max="11">
+            </select>
+
+            </section>
+            <dd>Xue BaoChai</dd>
+            <dd>Jia Yuanchun</dd>
+            <dd>Jia Tanchuan</dd>
+            <dd>Shi Xiangyun</dd>
+            <dd>Miao Yu</dd>
+            <dd>Jia Yingchun</dd>
+            <dd>Jia Xichun</dd>
+            <dd>Wang Xifeng</dd>
+            <dd>Jia Qiaojie</dd>
+            <dd>Li Wan</dd>
+            <dd>Qin Keqing</dd>
+            <dt><h2>Supplementary Volume</h2></dt>
+            <dd>Xiang Ling</dd>
+            <dt><h2>Another Supplementary Voolume</h2></dt>
+            <dd>Qing Wen</dd>
+            <dd>Hua Xiren</dd>
+        </dl>
+        <section>
+        <h3 style="color:red">JiaBaoyu</h3>
+        <form action="https://www.bilibili.com/bangumi/play/ep327843?from_spmid=666.19.0.0">
+            <label for="userpassword">Enter your Password:</label>
+            <input type="color">
+            <input id="userpassword" type="password",placeholder="Enter your Password">
+            <button style="background-color:brown">Submit</button>
+        </form>
+        </section>
+        
+        </main>
+    </body>
+    <footer>
+        <p>This is my website:</p>
+        <ul>
+        <li><a href="https://blog.csdn.net/weixin_46240624?type=blog">CSDN</a></li>
+        </ul>
+        <p>
+            <label for="requests">Any special requests?</label>
+            <textarea name="" id="requests" cols="30" rows="10"></textarea>
+        </p>
+    </footer>
+</htm>

@@ -1,0 +1,33 @@
+h1{
+    text-align:center;
+    text-decoration:orange underline wavy;
+    letter-spacing:10px;
+}
+
+h3{
+    color:crimson
+}
+
+p{
+    line-height:1.5;
+}
+.tag{
+    background-color:#e639e6;
+
+}
+input[type="range"]{
+    border:1px;
+}
+
+footer a{
+    color:#457b9d;
+}
+button:hover{
+    background-color:rgb(0,200,255);
+    color:rgb(255,255,255);
+
+}
+
+h2::first-letter{
+    font-size:40px;
+}

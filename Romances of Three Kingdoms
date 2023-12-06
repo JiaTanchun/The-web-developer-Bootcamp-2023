@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance of three kingdoms</title>
+    
+    <link rel="stylesheet" href="kingdom.css">
+    
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <h1>Romance of three kingdoms</h1>
+    <div id="one">Romance of the Three Kingdoms (traditional Chinese: 三國演義; simplified Chinese: 三国演义; pinyin: Sānguó Yǎnyì) is a 14th-century historical novel attributed to Luo Guanzhong. It is set in the turbulent years towards the end of the Han dynasty and the Three Kingdoms period in Chinese history, starting in 184 AD and ending with the reunification of the land in 280 by the Western Jin. The novel is based primarily on the Records of the Three Kingdoms, written by Chen Shou in the 3rd century.</div>
+    <div id="two">The story - part historical and part fictional - romanticises and dramatises the lives of feudal lords and their retainers, who tried to supplant the dwindling Han dynasty or restore it. While the novel follows hundreds of characters, the focus is mainly on the three power blocs that emerged from the remnants of the Han dynasty, and would eventually form the three states of Cao Wei, Shu Han, and Eastern Wu. The novel deals with the plots, personal and military battles, intrigues, and struggles of these states to achieve dominance for almost 100 years.</div>
+    <div id="three">Romance of the Three Kingdoms is acclaimed as one of the Four Great Classical Novels of Chinese literature; it has a total of 800,000 words and nearly a thousand dramatic characters (mostly historical) in 120 chapters.[1] The novel is among the most beloved works of literature in East Asia,[2] and its literary influence in the region has been compared to that of the works of Shakespeare on English literature.[3] It is arguably the most widely read historical novel in late imperial and modern China.[4] Herbert Giles stated that among the Chinese themselves, this is regarded as the greatest of all their novels.</div>
+    <button>Cuddle Me</button>
+
+    <h1>I am h1</h1>
+    <h1>I am also h1</h1>
+    <span>I am span</span>
+    <span>I am also a span</span>
+</body>
+</html>

@@ -1,0 +1,13 @@
+section{
+    width:80%;
+    height:800px;
+    background-image: url("https://img1.doubanio.com/view/richtext/large/public/p561710760.jpg") blueviolet;
+    background-size:contain;
+
+    margin:0 auto;
+}
+
+h1{
+    font-size:100px;
+    color:white;
+}

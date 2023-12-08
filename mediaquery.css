@@ -43,12 +43,27 @@ ul {
         color: orange;
     }
 }
-@media (max-width: 500px){
+@media (max-width: 768px){
     h1 {
+        font-size:4em;
+        color: red;
+    }
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+} 
+@media (max-width: 576px){
+    h1 {
+        font-size:3em;
         color: red;
     }
 } 
-
  @media (orientation: landscape) {
  body {
      background-color: magenta;

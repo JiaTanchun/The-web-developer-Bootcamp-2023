@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event</title>
+    <style>
+        button{
+            width:50px;
+            height:20px;
+        }
+        h1{
+            width:2px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="username">
+    <input type="checkbox">
+    <button disabled="disabled"></button>
+    <h1>IIInput FForm</h1>
+    <form action="/shelter" id="CXFform">
+        <input type="text" id="CatName">
+        <button>Submit</button>
+    </form>
+
+    <h2>Available Cats</h2>
+    <ul id="cats"></ul>
+
+    <script>
+        const uname=document.querySelector('input[type="text"]')
+        const box=document.querySelector('input[type="checkbox"]')
+
+        box.checked=true
+
+        const form=document.querySelector("#CXFform")
+        const input=document.querySelector("#CatName")
+        const list=document.querySelector("#cats")
+        form.addEventListener("submit",function(e){
+            e.preventDefault();
+            console.log("submit this form")
+
+            const catName=input.value;
+            const newLI=document.createElement("LI");
+            newLI.innerText=catName;
+            list.append(newLI)
+
+        });
+
+    </script>
+</body>
+</html>

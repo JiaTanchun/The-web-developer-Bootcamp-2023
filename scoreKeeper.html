@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
+</head>
+<body>
+    <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <header class="card-header">
+                      <p class="card-header-title">
+                        Ping Pong Score Keeper
+                      </p>
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="title is-1"><span id="p1display">0</span> to <span id="p2display">0</span></h1>
+                        <div class="subtitle">Use the buttons below to keep score</div>
+
+                        <label for="playto" class="label is-large is-inline">Playing to</label>
+                        <div class="select is-rounded">
+                            <select name="" id="playto">
+                                <option value="3">3</option>
+                                <option value="5">5</option>
+                                <option value="7">7</option>
+                                <option value="10">10</option>
+                                <option value="12">12</option>
+                           </select>
+                        </div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1button" class="is-primary button card-footer-item is-large">+1 Player One</button>
+                        <button id="p2button" class="is-info button card-footer-item is-large">+1 Player Two</button>
+                        <button id="reset" class="is-danger button card-footer-item is-large">Reset</button> 
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+   
+   
+
+   <script>
+    const p1button=document.querySelector('#p1button')
+    const p2button=document.querySelector('#p2button')
+    const resetButton=document.querySelector('#reset')
+
+    const p1display=document.querySelector('#p1display')
+    const p2display=document.querySelector('#p2display')
+
+    const winningScoreSelect=document.querySelector('#playto');
+
+    let p1score=0;
+    let p2score=0;
+    let winningScore=5;
+    let gameOver=false;
+
+
+    winningScoreSelect.addEventListener('change',function(){
+        /*将这个this.value这个字符串变成数字*/
+        winningScore=parseInt(this.value);
+        reset();
+    })
+
+    p1button.addEventListener('click',function(){
+        if (!gameOver){
+            p1score+=1;
+        if (p1score===winningScore){
+            gameOver=true;
+            p1display.classList.add('has-text-success');
+            p2display.classList.add('has-text-danger');
+            p1button.disabled=true;
+            p2button.disabled=true;}
+        }
+        p1display.textContent=p1score;
+    })
+
+    p2button.addEventListener('click',function(){
+        if (!gameOver){
+            p2score+=1;
+        if (p2score===winningScore){
+            gameOver=true;
+            p1display.classList.add('has-text-danger');
+            p2display.classList.add('has-text-success');
+            p1button.disabled=true;
+            p2button.disabled=true;}
+        }
+        p2display.textContent=p2score;
+    })  
+    
+    
+    
+    resetButton.addEventListener('click',reset)
+
+    function reset(){
+        gameOver=false;
+        p1score=0;
+        p2score=0;
+        p1display.textContent=0;
+        p2display.textContent=0;
+        p1display.classList.remove('has-text-success','has-text-danger');
+        p2display.classList.remove('has-text-success','has-text-danger');
+        p1button.disabled=false;
+        p2button.disabled=false;
+    }
+   </script>
+</body>
+</html>
